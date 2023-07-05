@@ -1,0 +1,44 @@
+/* brand logo at the top of the page */
+img {
+    border-color: black;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+}
+/* header of the top of the page */
+.header{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+/* hyper links sections */
+.links{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.links a{
+    margin: 10px;
+    font-size: larger;
+    text-decoration: none;
+}
+/* home directory */
+.home{
+    position: relative;
+    display: flex;
+    border: none;
+    border-color: black;
+    border-bottom: 1px solid #000000;
+    height: 100vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.about-me{
+    position: relative;
+    display: flex;
+    border: none;
+    border-color: #000000;
+    border-bottom: 1px solid #000000;
+    height: 100vh;
+}
