@@ -4,19 +4,20 @@
     <!-- Links to style sheet or other libraries -->
     <title>My Page</title>
     <link rel= "stylesheet" href = "style.css" > 
+    <script src="script.js"></script>
 </head>
     <body>
         <!-- the top bar -->
         <div class="header">
             <a href="#home">
-                <img src="https://pngfre.com/wp-content/uploads/apple-43-1024x1015.png" alt="Logo">
+                <img src="https://pngfre.com/wp-content/uploads/apple-43-1024x1015.png" alt="Logo" class="ex1">
                 <h8>RaymondWang-Page-$: Hello and Welcome!</h8>
             </a>
-            <section class="links">
+            <nav class="links">
                 <a href="#about-me">About Me</a>
-                <a href="#my-projects">My Projects</a>
-                <a href="#contacts">Contact Me</a>
-            </section>
+                <a href="#projects">My Projects</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
         </div>
         
         <div class="home" id="home">
@@ -29,14 +30,65 @@
 
             </section>
         </div>
-        <div class="about-me">
-            <h1>about me</h1>
+
+        <div class="about-me" id="about-me">
+            <div class="picture-container">
+                <div class="pictures">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png" alt="image" class="ex2">
+                </div>
+                <div class="my-text" id="my-text">
+                    <h1>About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit. Phasellus 
+                        imperdiet, nulla et dictum interdum, 
+                        nisi lorem egestas odio, vitae scelerisque 
+                        enim ligula venenatis dolor. Maecenas nisl est, 
+                        ultrices nec congue eget, auctor vitae massa. 
+                        Fusce luctus vestibulum augue ut aliquet.
+                        Mauris ante ligula, facilisis sed ornare eu, 
+                        lobortis in odio. Praesent convallis urna a 
+                        lacus interdum ut hendrerit risus congue. 
+                        Nunc sagittis dictum nisi, sed ullamcorper 
+                        ipsum dignissim ac...
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="projetcs">
-            <h1>Projects</h1>
+        <div class="projects" id="projects">
+            <h1>My Projects</h1>
+            <table>
+                <tr>
+                    <td id="p1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png" alt="image" class="ex2">
+                    </td>
+                    <td id="p2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png" alt="image" class="ex2">
+                    </td>
+                    <td id="p3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png" alt="image" class="ex2">
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="contact">
-            <h1> contact me</h1>
+        <div class="contact" id="contact">
+            <h1> Contact me</h1>
         </div>
+        <table class="links2">
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="image" class="l1" height="100px" width="100px">
+                </td>
+                <td>
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/585/original/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="image" class="l2" height="130px" width="130px">
+                </td>
+                <td>
+                    <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" alt="image" class="l3" height="100px" width="100px">
+                </td>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/542/542638.png" alt="image" class="l4" height="100px" width="100px">
+                </td>
+            </tr>
+        </table>
     </body>
 </html>

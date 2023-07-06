@@ -1,5 +1,5 @@
 /* brand logo at the top of the page */
-img {
+.ex1 {
     border-color: black;
     border-radius: 8px;
     height: 60px;
@@ -19,8 +19,12 @@ img {
     padding: 10px;
 }
 .links a{
-    margin: 10px;
+    margin: 20px;
     font-size: larger;
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: inherit;
     text-decoration: none;
 }
 /* home directory */
@@ -34,11 +38,57 @@ img {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
-.about-me{
+.about-me, .projects, .contact{
     position: relative;
     display: flex;
     border: none;
     border-color: #000000;
     border-bottom: 1px solid #000000;
     height: 100vh;
+}
+.about-me{
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+/* about me */
+.picture-container{
+    position: relative;
+    display: flex;
+    height: 80vh;
+    justify-content: center; /* Center horizontally */
+    align-items: baseline; /* Center vertically */
+}
+.pictures{
+    float: left;
+    padding-right: 130px;
+    margin-top: 150px;
+}
+.ex2{
+    border-color: black;
+    border-radius: 8px;
+    height: 400px;
+    width: 400px;
+}
+.my-text{
+    height: 60px;
+    width: 500px;
+    transform: translateY(-300px);
+}
+.projects{
+    position: relative;
+    justify-content: center; /* Center horizontally */
+}
+.projects h1{
+  position: absolute;
+  /* left: 45%; */
+  /* transform: translate(-50%, -50%); */
+  margin-top: 80px;
+}
+#p1, #p2,#p3{
+    padding-right: 30px;
+}
+.links2{
+    left: 50%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
