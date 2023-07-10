@@ -1,5 +1,13 @@
+/* website fonts */
+@font-face {
+    font-family: "Arvo";
+    src: url(Fonts/Arvo-Bold.ttf);
+    src: url(Fonts/Arvo-BoldItalic.ttf);
+    src: url(Fonts/Arvo-Italic.ttf);
+    src: url(Fonts/Arvo-Regular.ttf);
+}
 body{
-    font-family: sans-serif;
+    font-family: "Arvo";
 }
 /* brand logo at the top of the page */
 .ex1 {
@@ -17,6 +25,33 @@ body{
     z-index: 100;
     background-color: white;
 }
+.terminal{
+    display: inline-block;
+}
+.write {
+    color: black;
+    font-family: "Menlo";
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
 /* hyper links sections */
 .nav{
     position: absolute;
