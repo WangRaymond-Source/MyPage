@@ -4,7 +4,6 @@
     <!-- Links to style sheet or other libraries -->
     <title>My Page</title>
     <link rel= "stylesheet" href = "style.css" > 
-    <script src="script.js"></script>
 </head>
     <body>
         
@@ -37,8 +36,18 @@
         <div class="about-me" id="about-me">
             <div class="picture-container">
                 <div class="pictures">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/471px-Google_%22G%22_Logo.svg.png" alt="image" class="ex2">
+                    <img class="mySlides" src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" height="350px" width="350px">
+                    <img class="mySlides" src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg" height="350px" width="350px">
+                    <img class="mySlides" src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" height="350px" width="350px">
+                    <div class="dots-wrapper">
+                        <!-- Navigation dots will be added here -->
+                        <button class="dot active" onclick="currentDiv(1)"></button>
+                        <button class="dot" onclick="currentDiv(2)"></button>
+                        <button class="dot" onclick="currentDiv(3)"></button>
+                    </div>
                 </div>
+                <div class="arrow prev" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="arrow next" onclick="plusDivs(1)">&#10095;</div>
                 <div class="my-text" id="my-text">
                     <h1>About Me</h1>
                     <p>
@@ -96,4 +105,5 @@
         <!-- social media at the bottom: https://www.instagram.com/p/CqS7dExrWQ7/ -->
         <!-- home page animations: https://www.instagram.com/p/Cp7icx8O0V3/ -->
     </body>
+    <script src="script.js"></script>
 </html>

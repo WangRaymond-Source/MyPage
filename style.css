@@ -153,8 +153,9 @@ a:link, a:visited {
     align-items: baseline; /* Center vertically */
 }
 .pictures{
+    display: flex;
     float: left;
-    padding-right: 130px;
+    padding-right: 80px;
     margin-top: 150px;
 }
 .ex2{
@@ -196,4 +197,49 @@ a:link, a:visited {
 .contact h1{
     position: relative;
     top: 5%
+}
+/* image slider */
+.mySlides {display:none}
+.left-arrow, .right-arrow, .points {cursor:pointer}
+.points {height:13px;width:13px;padding:0}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 665px;
+}
+.dots-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    right: 50%;
+    top: 150px;
+}
+.dot{
+    border: none;
+    background: white ;
+    border-color: white;
+    opacity: 60%;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    outline: none;
+}
+.dot:hover {
+    background: rgba(0,0,0,0.3);
+}
+.dot.active{
+    background: rgba(0,0,0,0.5);
 }
