@@ -9,6 +9,7 @@
 body{
     font-family: "Arvo";
 }
+
 /* brand logo at the top of the page */
 .ex1 {
     border-color: black;
@@ -60,7 +61,7 @@ body{
     padding: 10px;
 }
 .nav a{
-    padding-right: 40px;
+    padding-right: 50px;
 }
 .links a{
     margin: 20px;
@@ -82,6 +83,54 @@ a:link, a:visited {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
+.home span{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.title span {
+	--total: calc(var(--duration) + var(--delay));
+	position: relative;
+	display: block;
+	color: transparent;
+	overflow: hidden;
+	animation: reveal 1s var(--total) forwards;
+}
+.title span::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0);
+	transform-origin: left;
+	padding-bottom: 100px;
+    background-color: black; /* #0561ee */
+	animation: rollIn var(--duration) var(--delay) forwards,
+		rollOut var(--duration) var(--total) forwards;
+    
+}
+@keyframes reveal {
+	to {
+		color: black;
+	}
+}
+@keyframes rollIn {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+@keyframes rollOut {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(105%);
+	}
+}
 .about-me, .projects, .contact{
     position: relative;
     display: flex;
@@ -99,6 +148,7 @@ a:link, a:visited {
     position: relative;
     display: flex;
     height: 80vh;
+    margin: auto;
     justify-content: center; /* Center horizontally */
     align-items: baseline; /* Center vertically */
 }
