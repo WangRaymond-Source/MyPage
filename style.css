@@ -38,7 +38,7 @@ body{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
+      typing 4.0s steps(30, end),
       blink-caret .5s step-end infinite;
 }
 /* The typing effect */
@@ -180,7 +180,26 @@ a:link, a:visited {
   margin-top: 80px;
 }
 #p1, #p2,#p3{
-    padding-right: 30px;
+    margin: 0;
+    padding-right: 100px;
+    height: 300px;
+    width: 300px;
+}
+.ex2{
+    height: 300px;
+    width: 300px;
+}
+.project-list{
+    position: center;
+}
+.project-list h1{
+    font-size: small;
+    margin-top: 20px;
+    position: relative;
+}
+.tools{
+    position: absolute;
+    bottom: 15%;
 }
 .contact{
     border: none;
@@ -324,7 +343,7 @@ a:link, a:visited {
 }
 .contact p{
     position: absolute;
-    bottom: 750px;
+    bottom: 740px;
     font-size:x-large;
     left: 3%;
 }
