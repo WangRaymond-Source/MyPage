@@ -172,6 +172,7 @@ a:link, a:visited {
 .projects{
     position: relative;
     justify-content: center; /* Center horizontally */
+    height: 1400px;
 }
 .projects h1{
   position: absolute;
@@ -186,8 +187,8 @@ a:link, a:visited {
     width: 300px;
 }
 .ex2{
-    height: 300px;
-    width: 300px;
+    height: 220px;
+    width: 220px;
 }
 .project-list{
     position: center;
@@ -198,8 +199,8 @@ a:link, a:visited {
     position: relative;
 }
 .tools{
-    position: absolute;
-    bottom: 15%;
+    position: center;
+    top: 30%;
 }
 .contact{
     border: none;
