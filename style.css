@@ -82,6 +82,7 @@ a:link, a:visited {
     height: 100vh;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    background-image: url('');
 }
 .home span{
     margin-bottom: 20px;
@@ -172,7 +173,7 @@ a:link, a:visited {
 .projects{
     position: relative;
     justify-content: center; /* Center horizontally */
-    height: 1400px;
+    height: 1300px;
 }
 .projects h1{
   position: absolute;
@@ -180,18 +181,25 @@ a:link, a:visited {
   /* transform: translate(-50%, -50%); */
   margin-top: 80px;
 }
-#p1, #p2,#p3{
-    margin: 0;
-    padding-right: 100px;
-    height: 300px;
-    width: 300px;
-}
 .ex2{
     height: 220px;
     width: 220px;
 }
+.row1{
+    position: absolute;
+    transform: translateY(50%);
+}
+.row2{
+    position: absolute;
+    transform: translateY(150%);
+}
 .project-list{
-    position: center;
+    display: table-cell;
+    justify-content: center; 
+    text-align: center;
+    padding-right: 100px;
+    height: fit-content;
+    width: 300px;
 }
 .project-list h1{
     font-size: small;
