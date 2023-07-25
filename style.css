@@ -9,7 +9,13 @@
 body{
     font-family: "Arvo";
 }
-
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 /* brand logo at the top of the page */
 .ex1 {
     border-color: black;
@@ -24,7 +30,7 @@ body{
     border: none;
     border-bottom: 1px solid #000000;
     z-index: 100;
-    background-color: white;
+    background-color: grey;
 }
 .terminal{
     display: inline-block;
@@ -78,11 +84,12 @@ a:link, a:visited {
     display: flex;
     border: none;
     border-color: black;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid black;
     height: 100vh;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    background-image: url('');
+    background-image: url('https://images.pexels.com/photos/593322/pexels-photo-593322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
 }
 .home span{
     margin-bottom: 20px;
@@ -106,14 +113,14 @@ a:link, a:visited {
 	transform: scaleX(0);
 	transform-origin: left;
 	padding-bottom: 100px;
-    background-color: black; /* #0561ee */
+    background-color: white; /* #0561ee */
 	animation: rollIn var(--duration) var(--delay) forwards,
 		rollOut var(--duration) var(--total) forwards;
     
 }
 @keyframes reveal {
 	to {
-		color: black;
+		color: white;
 	}
 }
 @keyframes rollIn {
@@ -143,6 +150,8 @@ a:link, a:visited {
 .about-me{
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    background-image: url('https://images.pexels.com/photos/10024569/pexels-photo-10024569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
 }
 /* about me */
 .picture-container{
@@ -174,12 +183,19 @@ a:link, a:visited {
     position: relative;
     justify-content: center; /* Center horizontally */
     height: 1300px;
+    background-image: url('https://images.pexels.com/photos/3361492/pexels-photo-3361492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
 }
 .projects h1{
+  color: white;
   position: absolute;
-  /* left: 45%; */
-  /* transform: translate(-50%, -50%); */
   margin-top: 80px;
+}
+.projects i{
+  color:white;
+  position: absolute;
+  padding-top: 130px;
+  padding-right: 10px;
 }
 .ex2{
     height: 220px;
@@ -207,11 +223,14 @@ a:link, a:visited {
     position: relative;
 }
 .tools{
+    color:white;
     position: center;
     top: 30%;
 }
 .contact{
     border: none;
+    background-image: url('https://images.pexels.com/photos/867467/pexels-photo-867467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:cover;
 }
 .links2{
     position: absolute;
@@ -336,6 +355,7 @@ a:link, a:visited {
 	}
 }
 .contact h1{
+    color: white;
     position: relative;
     top: 5%;
     left: 1%;
@@ -347,12 +367,13 @@ a:link, a:visited {
     left: 65%;
     width: 130%; /* Adjust the width to control the length of the half-line */
     height: 8px;
-    background-color: black; /* Adjust the color as desired */
+    background-color: white; /* Adjust the color as desired */
     transform: translateX(-50%); /* Centers the half-line relative to the text */
 }
 .contact p{
+    color: white;
     position: absolute;
-    bottom: 740px;
+    bottom: 730px;
     font-size:x-large;
     left: 3%;
 }
