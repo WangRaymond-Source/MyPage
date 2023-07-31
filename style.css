@@ -9,12 +9,17 @@
 body{
     font-family: "Arvo";
 }
+.stamp{
+    text-align: center;
+}
 html,body{
     width: 100%;
-    height: 100%;
+    height:100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-size: smaller;
+    background-color: gray;
 }
 /* brand logo at the top of the page */
 .ex1 {
@@ -22,6 +27,10 @@ html,body{
     border-radius: 8px;
     height: 60px;
     width: 60px;
+    transform: translate(3px,3px);
+}
+.pg1{
+    transform: translate(10px, -15px);
 }
 /* header of the top of the page */
 .header{
@@ -32,32 +41,39 @@ html,body{
     z-index: 100;
     background-color: grey;
 }
-.terminal{
+/* .terminal{
     display: inline-block;
 }
+*/
+/* type writer affects */
+/*
 .write {
     color: black;
     font-family: "Menlo";
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
+    overflow: hidden;  Ensures the content is not revealed until the animation 
+    border-right: .15em solid black;  The typwriter cursor 
+    white-space: nowrap;  Keeps the content on a single line 
+    margin: 0 auto;  Gives that scrolling effect as the typing happens 
+    letter-spacing: .1em;  Adjust as needed 
     animation: 
       typing 4.0s steps(30, end),
       blink-caret .5s step-end infinite;
 }
+*/
 /* The typing effect */
+/*
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-  
+  */
 /* The typewriter cursor effect */
+/*
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black }
-}
+} 
+*/
 
 /* hyper links sections */
 .nav{
@@ -68,6 +84,11 @@ html,body{
 }
 .nav a{
     padding-right: 50px;
+    font-weight: bold;
+    font-size: large;
+}
+.nav a:hover{
+    color: white;
 }
 .links a{
     margin: 20px;
@@ -95,6 +116,12 @@ a:link, a:visited {
     margin-bottom: 20px;
     font-size: 30px;
 }
+.home section{
+    text-align: center;
+}
+.welcome-msg{
+    transform: translateY(50px);
+}
 .title span {
 	--total: calc(var(--duration) + var(--delay));
 	position: relative;
@@ -120,7 +147,7 @@ a:link, a:visited {
 }
 @keyframes reveal {
 	to {
-		color: white;
+		color: rgb(8, 0, 114);
 	}
 }
 @keyframes rollIn {
@@ -175,9 +202,19 @@ a:link, a:visited {
     width: 400px;
 }
 .my-text{
-    height: 60px;
+    height: 65px;
     width: 500px;
-    transform: translateY(-300px);
+    transform: translateY(-370px);
+}
+.my-text h1{
+    font-size: 45px;
+    text-shadow: 5px 2px gray;
+}
+.my-text p{
+    font-size:medium;
+    text-emphasis: bold;
+    text-rendering:optimizeLegibility;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
 .projects{
     position: relative;
@@ -231,6 +268,7 @@ a:link, a:visited {
     border: none;
     background-image: url('https://images.pexels.com/photos/867467/pexels-photo-867467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size:cover;
+    padding-bottom: 50px;
 }
 .links2{
     position: absolute;
@@ -242,7 +280,11 @@ a:link, a:visited {
     padding-right: 100px;
 }
 /* image slider */
-.mySlides {display:none}
+.mySlides {
+    display:none;
+    border-radius: 10%;
+    box-shadow: 0px 1px 3.36px 0.55px rgba(0, 0, 0, 0.733);
+}
 .left-arrow, .right-arrow, .points {cursor:pointer}
 .points {height:13px;width:13px;padding:0}
 .arrow {
@@ -355,15 +397,17 @@ a:link, a:visited {
 	}
 }
 .contact h1{
+    font-size: xx-large;
     color: white;
     position: relative;
     top: 5%;
     left: 1%;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
 .contact h1::after{
     content: '';
     position: absolute;
-    bottom: 850px;
+    bottom: 845px;
     left: 65%;
     width: 130%; /* Adjust the width to control the length of the half-line */
     height: 8px;
@@ -373,7 +417,9 @@ a:link, a:visited {
 .contact p{
     color: white;
     position: absolute;
-    bottom: 730px;
+    bottom: 760px;
     font-size:x-large;
     left: 3%;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
