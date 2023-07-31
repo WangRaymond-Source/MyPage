@@ -27,7 +27,7 @@ html,body{
     border-radius: 8px;
     height: 60px;
     width: 60px;
-    transform: translate(3px,3px);
+    transform: translate(2px,2px);
 }
 .pg1{
     transform: translate(10px, -15px);
