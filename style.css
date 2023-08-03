@@ -396,7 +396,7 @@ outline-color: #2ea44f;
 .contact h1::after{
     content: '';
     position: absolute;
-    bottom: 845px;
+    bottom: 930px;
     left: 65%;
     width: 130%; /* Adjust the width to control the length of the half-line */
     height: 8px;
